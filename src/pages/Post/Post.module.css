@@ -41,8 +41,67 @@
     padding: 2.5rem 7.5rem 4.5rem;
 }
 
+.postMarkdownContainer h3,
+.postMarkdownContainer h4,
+.postMarkdownContainer h5,
+.postMarkdownContainer h6 {
+    font-family: var(--fonte-secundaria);
+}
+
+.postMarkdownContainer h3 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.postMarkdownContainer h4 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.postMarkdownContainer p {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.postMarkdownContainer a {
+    color: #0493d4;
+    text-decoration: underline;
+}
+
+.postMarkdownContainer img {
+    display: block;
+    margin: 0 auto;
+}
+
+.postMarkdownContainer ul {
+    font-size: 1.5rem;
+}
+
+.postMarkdownContainer ul > li {
+    margin-bottom: 1rem;
+    list-style: disc;
+}
+
+.postMarkdownContainer pre,
+.postMarkdownContainer blockquote {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #eaeaea;
+    border-radius: 5px;
+}
+
+.postMarkdownContainer pre {
+    overflow-x: auto;
+}
+
 @media (max-width: 1100px) {
     .paragraph {
+        margin-bottom: 2rem;
+    }
+
+    .postMarkdownContainer p {
         margin-bottom: 2rem;
     }
 }
@@ -74,5 +133,16 @@
  
     .postContentContainer {
         padding: 2rem 1rem 1.5rem;
+    }
+
+    .postMarkdownContainer h3 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .postMarkdownContainer p {
+        font-size: 1rem;
+        line-height: 1.75rem;
     }
 }
