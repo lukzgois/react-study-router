@@ -19,9 +19,11 @@ function AppRoutes() {
         <Route path="/" element={<MainLayout />}>
           <Route index element={<HomePage />} />
           <Route path="sobremim" element={<AboutPage />} />
-          <Route path="/posts/:id" element={<PostPage />} />
         </Route>
 
+        <Route path="/posts/:id/*" element={<PostPage />} />
+
+        <Route path="404" element={<NotFoundPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
 
