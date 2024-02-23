@@ -7,6 +7,14 @@
     margin-top: -2.5rem;
 }
 
+.posts li {
+  display: flex;
+}
+
+.posts li a {
+  display: flex;
+}
+
 @media (max-width: 1100px) {
     .posts {
         margin-top: 0;
